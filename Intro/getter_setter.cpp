@@ -20,8 +20,9 @@ class Student {
     int getAge() {  // getter
         return age;
     }
-     
 };
+
+
 
 int main() {
     Student s1;
