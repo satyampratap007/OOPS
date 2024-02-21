@@ -25,7 +25,7 @@ class Student {
     }
 
     // Destructor
-    
+
     ~Student() {
         cout << "Destructor called!" << "\n";
     }
@@ -43,9 +43,11 @@ int main() {
     Student s3(15,25);
     Student s4(45,30);
     s3 = s4;
-    s3.display(); 
-    s4.display(); 
-    Student *s5 = new Student(50,35);
-    *s5 = s4;
-    delete s5;   // need to explicitly release the memoryo
+    // s3.display(); 
+    // s4.display(); 
+
+    Student s5 = s4; // here also the copy Constructor is called
+    Student *s6 = new Student(50,35);
+    *s6 = s4;
+    delete s6;   // need to explicitly release the memoryo
 }
