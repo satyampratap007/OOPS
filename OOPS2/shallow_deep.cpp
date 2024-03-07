@@ -32,4 +32,8 @@ int main() {
     Student s2 (23, name);
     s2.display();
     s1.display();
+    s2.display();
+
+    
+
 }
